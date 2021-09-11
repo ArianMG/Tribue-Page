@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+#main{
+    display: flex;
+    flex-direction:column;
+}
+
+#container-img {
+    display: flex;
+    position: relative;
+    min-height: 640px;   /* If you remove this the normal course is screwed up, but if you leave it and resize the browser then it looks ugly*/
+    background-color: blue;
+}
+
+#img-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    width: auto;
+    background-color: brown;
+}
+
+#image {
+    flex: 1;
+    justify-content: center;
+    width: 100%;    
+    height: auto;
+}
+
+#img-caption {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+#container-nav{
+    position: absolute;
+}
+
+#title {
+    flex: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: right;
+    right: 2rem;
+}
+
+#title-name{
+    flex: 1;
+    font-size: 4rem;
+    margin-top: 8rem;
+    margin-right: 4rem;
+    margin-bottom: 0rem;
+}
+
+#title-history {   
+    flex: 1;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 4rem;
+}
+
+#title-date{
+    flex: 1;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+}
+
+#container-tribute {
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
