@@ -16,6 +16,8 @@ html{
     width: 100%;
 }
 
+
+/* PRESENTATION */
 #container-img {
     display: flex;
     position: relative;
@@ -126,7 +128,10 @@ html{
         box-shadow: 0 0 15px 2px white;
     }
 }
+/* PRESENTATION */
 
+
+/* TRIBUTE SECTION */
 #container-tribute {
     display: flex;
     flex-direction: column;
@@ -196,7 +201,10 @@ html{
     margin: 0 1rem;
     font-size: 1.5rem;
 }
+/* TRIBUTE SECTION */
 
+
+/* GALLERY SECTION */
 #gallery{
     background-color: rgb(223, 221, 221);
     width: 100%;
@@ -256,7 +264,52 @@ html{
 .image-container:hover .hover-image{
     transform: scale(1);
 }
+/* GALLERY SECTION */
 
+
+/* LIGHTBOX SECTION */
+.lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(170, 167, 167, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.lb-image {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+}
+
+.lb-image > a {
+    font-size: 50px;
+    font-weight: 1000;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px 20px;
+    margin: auto;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgba(223, 221, 221, 0.5);
+}
+
+.lb-image img{
+    flex: 1;
+    max-width: 600px;
+    width: auto;
+    max-height: 80%;
+    object-fit: cover;
+}
+/* LIGHTBOX SECTION */
+
+
+/* VIDEO SECTION */
 #videos{
     width: 100%;
     display: flex;
@@ -306,7 +359,10 @@ html{
 .hover-video > p{
     font-weight: 550;
 }
+/* VIDEO SECTION */
 
+
+/* ------- */
 #phrase {
     flex: 1;
     max-width: 900px;
@@ -314,7 +370,10 @@ html{
     padding: 5rem;
     text-align: center;
 }
+/* ------- */
 
+
+/* FOOTER */
 footer {
     width: 100%;
     height: 100px;
@@ -337,3 +396,4 @@ footer > div{
     width: 50px;
     cursor: pointer;
 }
+/* FOOTER */
